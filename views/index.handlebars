@@ -1,0 +1,57 @@
+<div class="container ">
+  <div class="row">
+    <div class="row justify-content-center align-items-center w-100 mt-5">
+      <p class="text-white titleText">你想對誰說幹話</p>
+    </div>
+    <form action="/" method="post">
+
+      <div class="card-group">
+
+        <div class="card mx-2">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            alt="Card image cap" style="height: 300px; object-fit: cover;">
+          <div class="card-body bg-success d-flex justify-content-center">
+            <label class="form-check-label font-weight-bolder text-white">
+              <input type="radio" name="job" id="developer" value="engineer">
+              工程師
+            </label>
+          </div>
+        </div>
+
+        <div class="card mx-2">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            alt="Card image cap" style="height: 300px; object-fit: cover;">
+          <div class="card-body bg-success d-flex justify-content-center">
+            <label class="form-check-label font-weight-bolder text-white">
+              <input type="radio" name="job" id="designer" value="designer">
+              設計師
+            </label>
+          </div>
+        </div>
+
+        <div class="card mx-2">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            alt="Card image cap" style="height: 300px; object-fit: cover;">
+          <div class="card-body bg-success d-flex justify-content-center">
+            <label class="form-check-label font-weight-bolder text-white">
+              <input type="radio" name="job" id="founder" value="entrepreneur">
+              創業家
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="outputArea mt-4">
+        <div class="outputText">
+          <input type="text" class="form-control" placeholder="請選擇一個職業！！" aria-label="" aria-describedby=""
+            value="{{#if trashTalk}}{{trashTalk}}{{/if}}">
+          <button class="btn btn-primary " type="submit">說幹話~</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
