@@ -2,7 +2,7 @@
   "name": "trash_talk_generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": " nodemon app.js",
