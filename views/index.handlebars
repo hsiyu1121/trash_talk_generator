@@ -13,7 +13,8 @@
             alt="Card image cap" style="height: 300px; object-fit: cover;">
           <div class="card-body bg-success d-flex justify-content-center">
             <label class="form-check-label font-weight-bolder text-white">
-              <input type="radio" name="job" id="developer" value="engineer">
+              <input type="radio" name="job" id="developer" value="engineer"
+                {{#if_job job 'engineer'}}checked{{/if_job}}>
               工程師
             </label>
           </div>
@@ -25,7 +26,8 @@
             alt="Card image cap" style="height: 300px; object-fit: cover;">
           <div class="card-body bg-success d-flex justify-content-center">
             <label class="form-check-label font-weight-bolder text-white">
-              <input type="radio" name="job" id="designer" value="designer">
+              <input type="radio" name="job" id="designer" value="designer"
+                {{#if_job job 'designer'}}checked{{/if_job}}>
               設計師
             </label>
           </div>
@@ -37,7 +39,8 @@
             alt="Card image cap" style="height: 300px; object-fit: cover;">
           <div class="card-body bg-success d-flex justify-content-center">
             <label class="form-check-label font-weight-bolder text-white">
-              <input type="radio" name="job" id="founder" value="entrepreneur">
+              <input type="radio" name="job" id="founder" value="entrepreneur"
+                {{#if_job job 'entrepreneur'}}checked{{/if_job}}>
               創業家
             </label>
           </div>
