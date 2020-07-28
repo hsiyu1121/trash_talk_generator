@@ -11,29 +11,26 @@ app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({extended:true}))
 
 Handlebars.registerHelper('if_job', function(job, equalJob, options){
-  if(job === equalJob){
+  if (job === equalJob){
     return options.fn(this)
-  }else{
+  } else {
     return options.inverse(this)
   }
 })
 
-
-app.get('/', (req, res)=>{
+app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.post('/', (req, res)=>{
+app.post('/', (req, res) => {
   const options = req.body.job
   const trashTalk = generateTalk(options) 
   const job = req.body.job
-  // console.log(options)
-  // console.log( generateTalk(options) )
   res.render('index', {trashTalk:trashTalk, job:job})
 })
 
 
-app.listen(port, ()=>{
+app.listen(port, () => {
   console.log(`Express is running on localhost:${port}`)
 })
 
